@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+    <div class="d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 gap-3 social-icons opacity-50">
+        <a href="#" style="color: #8b5cce;"><i class="fab fa-facebook-square fa-2x "></i></a>
+        <a href="#" style="color: #8b5cce;"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#" style="color: #8b5cce;"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+        <a href="#" style="color: #8b5cce;"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="#" style="color: #8b5cce;"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="px-2">
+            <img src="Images/logo.jpg" class="img-fluid rounded" width="60" height="60" alt="" srcset="">
+
+        </div>
+        <a class="navbar-brand font-weight-bolder" style="color: #8807d7;" href="#">PG-Store</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another link</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about</a>
+                </li>
+            </ul>
+
+            <div class="d-flex">
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2 text-light blur" style="background-color: transparent;" type="text" placeholder="Search">
+                    <button class="btn btn-dark text-light rounded" type="submit">Search</button>
+                </form>
+
+                <button class="btn btn-outline-danger ml-2" data-toggle="modal" data-target="#signModal"> log in
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="modal fade" id="signModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title text-danger ">
+                        <dt>
+                            Subscripe Now
+                        </dt>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-danger w-50">Log in</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="copyModel">
+        <div class="modal-dialog">
+            <div class="modal-content special-row text-light">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title font-weight-bold">PG-Store</h4>
+                    <button type="button" class="close text-danger" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    text copied..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <section id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators ">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner position-relative h-100">
+            <div class="overlay w-100 h-100 position-absolute top-0 left-0"></div>
+
+            <div class="carousel-item mh-100 active">
+                <img class="w-100 h-100" src="Images/img1.jpg" alt="Spiderman">
+                <div class="carousel-caption">
+                    <h3 class="font-weight-bolder">Spider man</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="carousel-item mh-100 h-100">
+                <img class="w-100 h-100" src="Images/img2.jpg" alt="god of war">
+                <div class="carousel-caption">
+                    <h3 class="font-weight-bolder">God Of War</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="carousel-item mh-100 h-100">
+                <img class="w-100 h-100" src="Images/img3.jpg" alt="last of us">
+                <div class="carousel-caption">
+                    <h3 class="font-weight-bolder">The Last Of Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempore.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </section>
+    <section class="p-5">
+        <div class="conteiner-fluid text-center p-3">
+            <h2 class="text-light">Welcome</h2>
+            <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tenetur adipisci
+                corrupti deserunt, perferendis aliquam sed, magnam quod numquam expedita asperiores dolorum? Facere
+                doloremque magnam ipsa quis quam. Eveniet, magni.</p>
+            <button class="btn btn-outline-light">Learn more</button>
+        </div>
+    </section>
+    <hr style="background-color: #8807d7;">
+    <section class="conteiner special-row p-5 text-center">
+        <h2 class="text-capitalize text-light font-weight-bolder">#The Most Famous Games In Our Store
+        </h2>
+    </section>
+    <hr style="background-color: #8807d7;">
+    <section class="conteiner d-flex flex-column gap p-3 w-100">
+        <button type="button" class="btn text-light btn-block my-1 special-row" data-toggle="collapse"
+            data-target="#dishes">Spider Man
+            collapsible</button>
+        <p id="dishes" class="collapse text-light p-3 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button type="button" class="btn text-light btn-block my-1 special-row" data-toggle="collapse"
+            data-target="#dishes2">God Of War
+            collapsible</button>
+        <p id="dishes2" class="collapse text-light p-3 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button type="button" class="btn text-light btn-block my-1 special-row" data-toggle="collapse"
+            data-target="#dishes3">The Last Of Us
+            collapsible</button>
+        <p id="dishes3" class="collapse text-light p-3 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </section>
+    <hr style="background-color: #8807d7;">
+
+        <section class="p-3">
+        <div class="conteiner-fluid d-flex justify-content-center align-items-center flex-column gap text-light p-2">
+            <h2 class="text-center w-100">
+                Translate from Arabic to Engilsh
+            </h2>
+            <div class="conteiner p-1">
+                <h4 class="p-2">
+                </h4>
+
+            </div>
+            <textarea name="" style="background-color: transparent;" rows="4"
+                class="p-2 container text-light border-light rounded" placeholder="translate:" rows="5"
+                id=""></textarea>
+
+            <button type="button" class="btn px-3 mt-3 align-self-end text-light" style="background-color: #8807d7;" data-toggle="modal" data-target="#copyModel">
+                Copy
+            </button>
+        </div>
+    </section>
+    <hr style="background-color: #8807d7;">
+    <section class="p-3">
+        <div class="conteiner-fluid d-flex justify-content-center align-items-center flex-column gap text-light p-2">
+            <h2 class="text-center w-100">
+                Translate from Arabic to Frensh
+            </h2>
+            <div class="conteiner p-1">
+                <h4 class="p-2">
+                </h4>
+
+            </div>
+            <textarea name="" style="background-color: transparent;" rows="4"
+                class="p-2 container text-light border-light rounded" placeholder="translate:" rows="5"
+                id=""></textarea>
+
+            <button type="button" class="btn px-3 mt-3 align-self-end text-light" style="background-color: #8807d7;" data-toggle="modal" data-target="#copyModel">
+                Copy
+            </button>
+        </div>
+    </section>
+    <hr style="background-color: #8807d7;">
+    <section class="p-3">
+        <div class="conteiner-fluid d-flex justify-content-center align-items-center flex-column gap text-light p-2">
+            <h2 class="text-center w-100">
+                Translate from Arabic to German
+            </h2>
+            <div class="conteiner p-1">
+                <h4 class="p-2">
+                </h4>
+
+            </div>
+            <textarea name="" style="background-color: transparent;" rows="4"
+                class="p-2 container text-light border-light rounded" placeholder="translate:" rows="5"
+                id=""></textarea>
+
+            <button type="button" class="btn px-3 mt-3 align-self-end text-light" style="background-color: #8807d7;" data-toggle="modal" data-target="#copyModel">
+                Copy
+            </button>
+        </div>
+    </section>
+
+    <hr style="background-color: #8807d7;">
+    <section class="fixed-img conteiner-fluid"></section>
+    <hr style="background-color: #8807d7;">
+    <section class="conteiner-fluid">
+        <h2 class="text-center p-5 special-row text-light">#Top 10 Games In Out Store</h2>
+        <div class=" p-4 d-flex  justify-content-center flex-wrap">
+            <div class="card p-2 text-light bg-dark col-sm-12 col-md-6 col-lg-4 mycard">
+                <img class="card-img-top" src="Images/img4.png" alt="Card image" style="width:100%; height: 60%;">
+                <div class="card-body">
+                    <h4 class="card-title">Grand Theft Auto VI</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <button class="btn btn-outline-light w-100 stretched-link">See Details</button>
+                </div>
+            </div>
+            <div class="card p-2 text-light bg-dark col-sm-12 col-md-6 col-lg-4 mycard">
+                <img class="card-img-top" src="Images/img5.png" alt="Card image" style="width:100%; height: 60%;">
+                <div class="card-body">
+                    <h4 class="card-title">EA Sports FC 26</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <button class="btn btn-outline-light w-100 stretched-link">See Details</button>
+                </div>
+            </div>
+
+            <div class="card p-2 text-light bg-dark col-sm-12 col-md-6 col-lg-4 mycard">
+                <img class="card-img-top" src="Images/img6.png" alt="Card image" style="width:100%; height: 60%;">
+                <div class="card-body">
+                    <h4 class="card-title">Spider Man 2</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <button class="btn btn-outline-light w-100 stretched-link">See Details</button>
+                </div>
+            </div>
+            <div class="card p-2 text-light bg-dark col-sm-12 col-md-6 col-lg-4 mycard">
+                <img class="card-img-top" src="Images/img7.png" alt="Card image" style="width:100%; height: 60%;">
+                <div class="card-body">
+                    <h4 class="card-title">Crash™ Team Racing Nitro-Fueled</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <button class="btn btn-outline-light w-100 stretched-link">See Details</button>
+                </div>
+            </div>
+            <div class="card p-2 text-light bg-dark col-sm-12 col-md-6 col-lg-4 mycard">
+                <img class="card-img-top" src="Images/img8.png" alt="Card image" style="width:100%; height: 60%;">
+                <div class="card-body">
+                    <h4 class="card-title">Final Fantasy VII Rebirth</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <button class="btn btn-outline-light w-100 stretched-link">See Details</button>
+                </div>
+            </div>
+            <div class="card p-2 text-light bg-dark col-sm-12 col-md-6 col-lg-4 mycard">
+                <img class="card-img-top" src="Images/img9.png" alt="Card image" style="width:100%; height: 60%;">
+                <div class="card-body">
+                    <h4 class="card-title">Call Of Duty Modern WareFare |||</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <button class="btn btn-outline-light w-100 stretched-link">See Details</button>
+                </div>
+            </div>
+            <div class="card p-2 text-light bg-dark col-sm-12 col-md-6 col-lg-4 mycard">
+                <img class="card-img-top" src="Images/img10.png" alt="Card image" style="width:100%; height: 60%;">
+                <div class="card-body">
+                    <h4 class="card-title">Ghost of Tsushima Directors Cut MULTi26-ElAmigos</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <button class="btn btn-outline-light w-100 stretched-link">See Details</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr style="background-color: #8807d7;">
+    <section class="fixed-img conteiner-fluid"></section>
+    <hr style="background-color: #8807d7;">
+    <div class="conteiner-fluid">
+        <h2 class="text-center w-100 special-row p-5 text-light font-weight-bold">..Thanks For..</h2>
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="team card" style="width: 300px;">
+                <img class="card-img-top w-100 h-100" src="Images/preson.png" alt="Card image">
+                <div class="card-img-overlay text-light d-flex flex-column justify-content-between">
+                    <div class="p-2">
+                        <h5>All Thanks And Appreciation</h5>
+                        <h6 class="font-weight-bold">🕔 June 22, 2023</h6>
+                    </div>
+                    <div class="p-2">
+                        <img class="rounded-circle my-3" width="80" height="80" src="Images/preson.png" alt="">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team card" style="width: 300px;">
+                <img class="card-img-top w-100 h-100" src="Images/preson.png" alt="Card image">
+                <div class="card-img-overlay bg-dark-opacity text-light d-flex flex-column justify-content-between">
+                    <div class="p-2">
+                        <h5>All Thanks And Appreciation</h5>
+                        <h6 class="font-weight-bold">🕔 June 22, 2023</h6>
+                    </div>
+                    <div class="p-2">
+                        <img class="rounded-circle my-3" width="80" height="80" src="Images/preson.png" alt="">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team card" style="width: 300px;">
+                <img class="card-img-top w-100 h-100" src="Images/preson.png" alt="Card image">
+                <div class="card-img-overlay bg-dark-opacity text-light d-flex flex-column justify-content-between">
+                    <div class="p-2">
+                        <h5>All Thanks And Appreciation</h5>
+                        <h6 class="font-weight-bold">🕔 June 22, 2023</h6>
+                    </div>
+                    <div class="p-2">
+                        <img class="rounded-circle my-3" width="80" height="80" src="Images/preson.png" alt="">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="background-color: #8807d7;">
+    <section>
+        <h3 class="text-center text-light" style="margin-top: 100px;"><b><i>Games News</i></b></h3>
+        <div class="container-md wider-container px-2 px-md-3" style="margin-top: 40px;">
+
+            <div class="card mb-3 w-100 px-2">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block">
+                        <div class="special-image special-image1 min-vh-25 h-100" style="background-image: url(Images/img4.png);"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect">
+                        <div class="special-image" style="background-image: url(Images/img4.png);"></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title fs-3" style="color: #8807d7;"><b><i>Grand Theft Auto VI</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of
+                                Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal
+                                Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                                Trailer</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                                9 mins</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                                Play
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2 " style="margin-top: 40px;">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4  order-1 order-md-1 d-none d-md-block clip-slant2">
+                        <div class="special-image special-image2 min-vh-25 h-100" style="background-image: url(Images/img5.png);"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect">
+                        <div class="special-image" style="background-image: url(Images/img5.png);"></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title fs-3" style="color: #8807d7;"><b><i>EA Sport Fc 26</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of
+                                Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal
+                                Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                                Trailer</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                                13
+                                mins</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                                Play
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block">
+                        <div class="special-image special-image1 min-vh-25 h-100" style="background-image: url(Images/img2.jpg);"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect">
+                        <div class="special-image" style="background-image: url(Images/img2.jpg);"></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title fs-3" style="color: #8807d7;"><b><i>God Of War</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of
+                                Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal
+                                Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                                Trailer</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                                10 mins</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                                Play
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2 " style="margin-top: 40px;">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4  order-1 order-md-1 d-none d-md-block clip-slant2">
+                        <div class="special-image special-image2 min-vh-25 h-100" style="background-image: url(Images/img3.jpg);"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect">
+                        <div class="special-image" style="background-image: url(Images/img3.jpg);"></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title fs-3" style="color: #8807d7;"><b><i>The Last Of Us</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of
+                                Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal
+                                Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                                Trailer</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                                7
+                                mins</a>
+                            <a href="#"
+                                class="btn btn-dark text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                                Play
+                                Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container w-75" style="margin-top: 100px;">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2" 
+                        style="width: 10rem;box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color:slategray ;"><b><i>Subscribe Now</i></b></h4>
+                            <img src="Images/whats.jpg" alt="" class="img-fluid " style="margin-top: -5px;"><br>
+                            <a href="#" class="d-inline-block ">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2" style="width: 10rem; height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="Images/insta.jpg" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2" style="width: 10rem; height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="Images/linkedin.jpg" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2" style="width: 10rem; height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="Images/twitter.jpg" alt="" class="img-fluid d-block mx-auto"
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container-fluid bg-dark" style="margin-top: 100px;">
+            <br>
+            <hr>
+            <div class="container py-3 d-none d-sm-block">
+                <div class="row text-center align-items-center mb-2">
+                    <div class="col-sm-4">
+                        <img src="Images/logo.jpg" alt="" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Good Company</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="Images/logo.jpg" alt="" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Important Links</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="Images/logo.jpg" alt="" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Vision</i></b>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border-color:#5a6670; margin: 8px 0;">
+                <div class="row text-center mt-2">
+                    <div class="col-sm-4">
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Tel: 000-000-000</p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Address: EGYPT</p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Fax: 000-000-000</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Visit Us</p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Take A Look</p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Your Health Is More Important</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Services For All</p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">Provide Best Services</p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;">You Will Be Better Than Before</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-4 d-block d-sm-none">
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <img src="Images/img5.png" alt="" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Good Company</i></b>
+                        </div>
+                        <p style="color:rgb(219, 231, 243); margin-top:8px;">Tel: 000-000-000</p>
+                        <p style="color:rgb(219, 231, 243);">Address: EGYPT</p>
+                        <p style="color:rgb(219, 231, 243);">Fax: 000-000-000</p>
+                        <hr style="border-color:#5a6670;">
+                    </div>
+                </div>
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <img src="Images/img5.png" alt="" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Important Links</i></b>
+                        </div>
+                        <p style="color:rgb(219, 231, 243); margin-top:8px;">Visit Us</p>
+                        <p style="color:rgb(219, 231, 243);">Take A Look</p>
+                        <p style="color:rgb(219, 231, 243);">Your Health Is More Important</p>
+                        <hr style="border-color:#5a6670;">
+                    </div>
+                </div>
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <img src="Images/img5.png" alt="" style="width:100px;height:100px;">
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Vision</i></b>
+                        </div>
+                        <p style="color:rgb(219, 231, 243); margin-top:8px;">Services For All</p>
+                        <p style="color:rgb(219, 231, 243);">Provide Best Services</p>
+                        <p style="color:rgb(219, 231, 243);">You Will Be Better Than Before</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin:10px 0;">
+            <h5 class="text-center" style="margin: 0; color: #8807d7">
+                <b>© 2025 FoodExpress. All Rights Reserved. Designed By Eng/ Mariam Hagras</b>
+            </h5><br>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
